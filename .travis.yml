@@ -1,2 +1,8 @@
 language: c
 os: linux
+
+script: cd build
+cmake .. -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" 
+make all
+./src/ExampleProject_run
+./tst/ExampleProject_tst
